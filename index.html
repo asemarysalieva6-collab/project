@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleStore | Магазин одежды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Style<span>Store</span></a>
+
+        <nav class="nav">
+            <a href="#home">Главная</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#about">О нас</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="searchBtn">⌕</button>
+            <button id="favoritesBtn">♡</button>
+            <button id="cartBtn">Корзина (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="subtitle">НОВАЯ КОЛЛЕКЦИЯ</p>
+                <h1>Твой стиль.<br>Твои правила.</h1>
+                <p>Одежда, в которой ты чувствуешь себя собой.</p>
+                <a href="#catalog" class="btn">Смотреть коллекцию</a>
+            </div>
+        </section>
+
+        <section class="catalog" id="catalog">
+            <h2>Наш каталог</h2>
+            <p class="section-description">Найди свой идеальный образ</p>
+
+            <div class="catalog-tools">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Найти одежду..."
+                >
+
+                <select id="categoryFilter">
+                    <option value="all">Все категории</option>
+                    <option value="Верх">Верх</option>
+                    <option value="Низ">Низ</option>
+                    <option value="Обувь">Обувь</option>
+                </select>
+            </div>
+
+            <div class="products" id="products"></div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>О StyleStore</h2>
+            <p>
+                Мы помогаем находить одежду, которая отражает
+                индивидуальность каждого человека.
+            </p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Свяжитесь с нами</h2>
+            <p>Email: style@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 StyleStore. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
